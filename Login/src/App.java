@@ -5,7 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Login extends Application {
+public class App extends Application {
 
   public static void main(String[] args) throws Exception {
     launch(args);

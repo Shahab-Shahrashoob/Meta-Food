@@ -13,15 +13,11 @@ public class loginControl {
   private Hyperlink signUpLink;
 
   public void loginButtonClicked() {
-    String enteredUsername = username.getText();
-    String enteredPassword = password.getText();
     String error = "Wrong Username and Password";
     errorLabel.setText(error);
   }
 
   public void signUpLinkClicked() {
-    String enteredUsername = username.getText();
-    String enteredPassword = password.getText();
     String error = "Wrong Username and Password";
     errorLabel.setText(error);
   }
