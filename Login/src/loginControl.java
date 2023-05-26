@@ -6,19 +6,19 @@ import javafx.scene.control.TextField;
 
 public class loginControl {
 
-  private TextField username;
-  private PasswordField password;
-  private Button login;
-  private Label errorLabel;
-  private Hyperlink signUpLink;
+  public TextField username;
+  public PasswordField password;
+  public Button login;
+  public Label errorLabel;
+  public Hyperlink signUpLink;
 
   public void loginButtonClicked() {
-    String error = "Wrong Username and Password";
+    String error = "Wrong Username or Password";
     errorLabel.setText(error);
   }
 
   public void signUpLinkClicked() {
-    String error = "Wrong Username and Password";
+    String error = "Wrong Username or Password";
     errorLabel.setText(error);
   }
 }
