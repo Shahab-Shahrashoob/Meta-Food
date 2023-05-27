@@ -39,7 +39,7 @@
             <TextField fx:id="username" layoutX="109.0" layoutY="110.0" promptText="Username" />
             <PasswordField fx:id="password" layoutX="109.0" layoutY="149.0" promptText="Password" />
             <Button fx:id="login" layoutX="130.0" layoutY="200.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: #ffeccf;" text="Login" />
-            <Label fx:id="errorLabel" layoutX="59.0" layoutY="84.0" prefHeight="24.0" prefWidth="174.0" textAlignment="CENTER" textFill="RED">
+            <Label fx:id="errorLabel" layoutX="59.0" layoutY="84.0" prefHeight="24.0" prefWidth="225.0" textAlignment="CENTER" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font></Label>
