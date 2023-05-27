@@ -11,6 +11,7 @@ public class loginControl {
   public Button login;
   public Label errorLabel;
   public Hyperlink signUpLink;
+  public Hyperlink adminLink;
 
   public void loginButtonClicked() {
     String error = "Wrong Username or Password";
@@ -18,4 +19,6 @@ public class loginControl {
   }
 
   public void signUpLinkClicked() {}
+
+  public void adminLinkClicked() {}
 }
