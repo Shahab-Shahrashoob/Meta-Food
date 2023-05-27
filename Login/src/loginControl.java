@@ -17,8 +17,5 @@ public class loginControl {
     errorLabel.setText(error);
   }
 
-  public void signUpLinkClicked() {
-    String error = "Wrong Username or Password";
-    errorLabel.setText(error);
-  }
+  public void signUpLinkClicked() {}
 }
