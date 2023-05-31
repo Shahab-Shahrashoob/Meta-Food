@@ -23,21 +23,21 @@ public class loginControl {
   public Hyperlink adminLink;
 
   public void loginButtonClicked() throws UnknownHostException, IOException {
-    // Socket socket = new Socket("127.0.0.1", 5000);
-    // ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
-    // ObjectOutputStream output = new ObjectOutputStream(
-    // socket.getOutputStream()
-    // );
-    // output.writeObject(username.getText());
-    String name = username.getText();
-    String pass = password.getText();
-    if (name.equals("shahab") && pass.equals("8118")) {
-      errorLabel.setStyle("-fx-text-fill : green;");
-      errorLabel.setText("Correct Username & Password");
-    } else {
-      errorLabel.setStyle("-fx-text-fill : red;");
-      errorLabel.setText("Wrong Username or Password");
-    }
+    Socket socket = new Socket("127.0.0.1", 5000);
+    ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+    ObjectOutputStream output = new ObjectOutputStream(
+      socket.getOutputStream()
+    );
+    output.writeObject(username.getText());
+    // String name = username.getText();
+    // String pass = password.getText();
+    // if (name.equals("shahab") && pass.equals("8118")) {
+    // errorLabel.setStyle("-fx-text-fill : green;");
+    // errorLabel.setText("Correct Username & Password");
+    // } else {
+    // errorLabel.setStyle("-fx-text-fill : red;");
+    // errorLabel.setText("Wrong Username or Password");
+    // }
   }
 
   public void signUpLinkClicked() throws IOException {
