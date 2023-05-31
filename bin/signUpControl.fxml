@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -18,6 +19,11 @@
                   <Image url="@restaurant-logo-created-with-illustration-of-cook.png" />
                </image>
             </ImageView>
+            <Hyperlink fx:id="loginBack" focusTraversable="false" layoutX="42.0" layoutY="346.0" onAction="#loginBackClicked" text="← Login Page" textFill="#613110" underline="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
          </children>
       </AnchorPane>
    </left>
@@ -48,7 +54,7 @@
             <TextField fx:id="password" layoutX="126.0" layoutY="133.0" promptText="Password" />
             <TextField fx:id="confirmPassword" layoutX="126.0" layoutY="171.0" promptText="Confirm Password" />
             <Button fx:id="signUpButton" layoutX="175.0" layoutY="227.0" mnemonicParsing="false" onAction="#signUpButtonClicked" style="-fx-background-color: #ffeccf;" text="Sign Up" textFill="#613110" />
-            <Label fx:id="signUpCheck" layoutX="86.0" layoutY="266.0" prefHeight="20.0" prefWidth="133.0" textAlignment="CENTER" textFill="#04fa29">
+            <Label fx:id="signUpCheck" layoutX="86.0" layoutY="266.0" prefHeight="31.0" prefWidth="134.0" textAlignment="CENTER" textFill="#04fa29">
                <font>
                   <Font size="14.0" />
                </font></Label>
