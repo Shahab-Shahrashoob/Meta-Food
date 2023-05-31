@@ -5,21 +5,26 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.PasswordField;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 
-public class signUpControl {
+public class adminLoginControl {
 
-  public TextField username;
-  public TextField password;
-  public TextField confirmPassword;
-  public Label signUpCheck;
-  public Button signUpButton;
+  public Label adminError;
+  public Button adminLogin;
+  public PasswordField adminPassword;
+  public AnchorPane backGround;
   public Hyperlink loginBack;
 
-  public void signUpButtonClicked() throws InterruptedException {
-    signUpCheck.setStyle("-fx-text-fill : green;");
-    signUpCheck.setText("Sign Up Successful");
+  public void adminLoginButtonClicked() {
+    if (adminPassword.getText().equals("8118")) {
+      adminError.setStyle("-fx-text-fill : green;");
+      adminError.setText("Correct Password");
+    } else {
+      adminError.setStyle("-fx-text-fill : red;");
+      adminError.setText("Wrong Password");
+    }
   }
 
   public void loginBackClicked() throws IOException {
