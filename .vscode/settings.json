@@ -12,6 +12,13 @@
 		"C:/Users/User/.vscode/extensions/javafx-sdk-20.0.1/lib/javafx.media.jar",
 		"C:/Users/User/.vscode/extensions/javafx-sdk-20.0.1/lib/javafx.swing.jar",
 		"C:/Users/User/.vscode/extensions/javafx-sdk-20.0.1/lib/javafx.web.jar",
-		"C:/Users/User/.vscode/extensions/javafx-sdk-20.0.1/lib/javafx-swt.ja"
+		"C:/Users/User/.vscode/extensions/javafx-sdk-20.0.1/lib/javafx-swt.ja",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.base.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.controls.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.fxml.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.graphics.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.media.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.swing.jar",
+		"c:\\javafx-sdk-20.0.1\\lib\\javafx.web.jar"
 	]
 }
