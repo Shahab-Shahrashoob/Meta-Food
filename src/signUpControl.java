@@ -13,6 +13,8 @@ public class signUpControl {
   public TextField username;
   public TextField password;
   public TextField confirmPassword;
+  public TextField email;
+  public TextField phoneNumber;
   public Label signUpCheck;
   public Button signUpButton;
   public Hyperlink loginBack;

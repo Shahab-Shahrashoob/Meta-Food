@@ -1,8 +1,9 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -22,16 +23,18 @@ public class loginControl {
   public Hyperlink signUpLink;
   public Hyperlink adminLink;
 
-  public void loginButtonClicked() throws UnknownHostException, IOException {
-    System.out.println("hello");
-    Socket socket = new Socket("127.0.0.1", 7000);
-    ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
-    ObjectOutputStream output = new ObjectOutputStream(
+  public void loginButtonClicked() throws IOException {
+    Socket socket = new Socket("127.0.0.1", 4999);
+    InputStreamReader input = new InputStreamReader(socket.getInputStream());
+    OutputStreamWriter output = new OutputStreamWriter(
       socket.getOutputStream()
     );
+    BufferedReader reader = new BufferedReader(input);
+    BufferedWriter writer = new BufferedWriter(output);
     String result = username.getText();
-    output.writeObject(result);
-    output.flush();
+    writer.write(result);
+    String reult = reader.readLine();
+    errorLabel.setText(reult);
   }
 
   public void signUpLinkClicked() throws IOException {
