@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffeccf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addwithtablerestaurant">
+   <children>
+      <DialogPane layoutY="345.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #613110;" />
+      <ImageView fx:id="adminpage" fitHeight="45.0" fitWidth="61.0" layoutX="278.0" layoutY="350.0" onMouseClicked="#adminclick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restaurant.png" />
+         </image>
+      </ImageView>
+      <Text fill="#613110" layoutX="36.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Restaurant">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" alignment="CENTER" layoutX="128.0" layoutY="101.0" promptText="Name of restaurant" />
+      <Text layoutX="60.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="address" alignment="CENTER" layoutX="71.0" layoutY="275.0" prefHeight="26.0" prefWidth="458.0" promptText="Address of restaurant" />
+      <Text layoutX="71.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="323.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="323.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Close:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="close" alignment="CENTER" layoutX="398.0" layoutY="144.0" promptText="Close time" />
+      <TextField fx:id="start" alignment="CENTER" layoutX="398.0" layoutY="101.0" promptText="Start time" />
+      <Text layoutX="37.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of table :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tables" layoutX="212.0" layoutY="150.0" prefHeight="26.0" prefWidth="75.0" />
+      <Button fx:id="addrestaurantbutton" layoutX="444.0" layoutY="354.0" mnemonicParsing="false" onAction="#addclicked" style="-fx-background-color: ffeccf;" text="Add restaurant" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="39.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image of restaurant:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="imageaddress" alignment="CENTER" layoutX="254.0" layoutY="202.0" prefHeight="26.0" prefWidth="241.0" promptText="image address" />
+      <Label fx:id="confirm" layoutX="107.0" layoutY="312.0" prefHeight="18.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>
