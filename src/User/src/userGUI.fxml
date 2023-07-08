@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffeccf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userGUI">
+   <children>
+      <DialogPane layoutY="347.0" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #613110;" />
+      <Label layoutX="33.0" layoutY="35.0" text="Welcome " textFill="#613110">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="145.0" layoutY="35.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="reschoose" layoutX="222.0" layoutY="200.0" onAction="#select" prefWidth="150.0" promptText="choose restaurant" style="-fx-background-color: FFD987;" />
+      <Label layoutX="411.0" layoutY="46.0" text="Your Balance:" textFill="#613110">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userbalance" layoutX="501.0" layoutY="46.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="reslabel" alignment="CENTER" layoutX="112.0" layoutY="142.0" text="Please choose the restaurant you want to order" textFill="#613110">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="home" fitHeight="50.0" fitWidth="69.0" layoutX="272.0" layoutY="347.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restaurant.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

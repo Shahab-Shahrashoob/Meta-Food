@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffeccf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addRestaurantPage">
+   <children>
+      <DialogPane layoutY="345.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #613110;" />
+      <ImageView fx:id="adminpage" fitHeight="45.0" fitWidth="61.0" layoutX="278.0" layoutY="350.0" onMouseClicked="#adminclick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restaurant.png" />
+         </image>
+      </ImageView>
+      <Text fill="#613110" layoutX="36.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Restaurant">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="26.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="deliverypic" fitHeight="150.0" fitWidth="200.0" layoutX="128.0" layoutY="147.0" onMousePressed="#takeAwayClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fooddelivery.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="withtablechoose" fitHeight="150.0" fitWidth="200.0" layoutX="323.0" layoutY="147.0" onMousePressed="#withTableClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img.icons8.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="37.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the restaurant type:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="175.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="362.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With table">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

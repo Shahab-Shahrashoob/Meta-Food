@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffeccf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="choosefood">
+   <children>
+      <DialogPane layoutX="-5.0" layoutY="347.0" prefHeight="58.0" prefWidth="607.0" style="-fx-background-color: #613110;" />
+      <ImageView fx:id="userpage" fitHeight="54.0" fitWidth="50.0" layoutX="275.0" layoutY="349.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restaurant.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="foodchoose" layoutX="225.0" layoutY="261.0" onAction="#select" prefWidth="150.0" promptText="Choos Food" style="-fx-background-color: FFD987;" />
+      <Label layoutX="46.0" layoutY="43.0" text="You are in " textFill="#613110">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="reslabel" layoutX="160.0" layoutY="43.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="220.0" text="Please choose the food you want to order" textFill="#613110">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="112.0" text="Restaurant address: " textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="resaddress" layoutX="225.0" layoutY="112.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="152.0" text="Start: " textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="152.0" text="End: " textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="187.0" text="number of delivery/table:" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="start" layoutX="124.0" layoutY="152.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="end" layoutX="292.0" layoutY="152.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="table" layoutX="263.0" layoutY="187.0" text="Label" textFill="#613110">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="respic" fitHeight="150.0" fitWidth="200.0" layoutX="366.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="respic" fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
